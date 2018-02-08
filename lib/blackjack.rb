@@ -72,7 +72,8 @@ def runner
   if nextSum > 21
     end_game(sum)
   else
-    display_card_total(hit?(sum))
+    currentSum = nextSum
+    display_card_total(hit?(currentSum))
   end
 
 end
