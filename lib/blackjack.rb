@@ -67,15 +67,12 @@ end
 def runner
   # code runner here
   welcome
-  sum = initial_round
-  puts("SUMSUMSUMSUMSUM: #{sum}")
-  sum += hit?(sum)
-  puts("SUMSUMSUMSUMSUM: #{sum}")
-  display_card_total(sum)
-  #if sum > 21
-  #  end_game(sum)
-  #else
-  #  display_card_total(hit?(sum))
-  #end
+  currentSum = initial_round #sum is 20
+  nextSum = hit?(currentSum)
+  if nextSum > 21
+    end_game(sum)
+  else
+    display_card_total(hit?(sum))
+  end
 
 end
