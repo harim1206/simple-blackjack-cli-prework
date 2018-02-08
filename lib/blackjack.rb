@@ -70,10 +70,10 @@ def runner
   sum = initial_round
   sum += hit?(sum)
   display_card_total(sum)
-  if sum > 21
-    end_game(sum)
-  else
-    display_card_total(hit?(sum))
-  end
+  #if sum > 21
+  #  end_game(sum)
+  #else
+  #  display_card_total(hit?(sum))
+  #end
 
 end
