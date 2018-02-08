@@ -69,8 +69,8 @@ def runner
   welcome
   sum = initial_round #sum is 20
   nextSum = hit?(sum)
-  if hit?(sum) > 21
-    end_game(sum)
+  if nextSum > 21
+    end_game(nextSum)
   end
 
 end
