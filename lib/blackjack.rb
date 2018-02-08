@@ -67,7 +67,7 @@ end
 def runner
   # code runner here
   welcome
-  currentSum = initial_round #sum is 20
+  sum = initial_round #sum is 20
   nextSum = hit?(currentSum)
   if nextSum > 21
     end_game(nextSum)
