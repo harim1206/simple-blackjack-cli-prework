@@ -68,6 +68,7 @@ def runner
   # code runner here
   welcome
   sum = initial_round
+  puts("sum: #{{sum}}")
   sum += hit?(sum)
   display_card_total(sum)
   #if sum > 21
