@@ -69,6 +69,7 @@ def runner
   welcome
   sum = initial_round
   sum += hit?(sum)
+  display_card_total(sum)
   if sum > 21
     end_game(sum)
   else
